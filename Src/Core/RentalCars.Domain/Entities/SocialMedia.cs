@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RentalCars.Domain.Entities
 {
-    public class SocailMedia : BaseEntity
+    public class SocialMedia : BaseEntity
     {
         public string? Name{ get; set; }
         public string? Icon { get; set; }

@@ -23,6 +23,9 @@ namespace RentalCars.Domain.Entities
         
         public Decimal? DailyPrice { get; set; }
 
+        public int CarID { get; set; }
+        public Car Car { get; set; }
+
 
     }
 }

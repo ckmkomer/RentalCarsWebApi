@@ -8,7 +8,9 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
@@ -22,6 +24,13 @@
     </PackageReference>
     <PackageReference Include="Serilog" Version="3.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\RentalCars.Application\RentalCars.Application.csproj" />
+    <ProjectReference Include="..\..\Core\RentalCars.Domain\RentalCars.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\RentalCars.Infrastructure\RentalCars.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\RentalCars.Persistence\RentalCars.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

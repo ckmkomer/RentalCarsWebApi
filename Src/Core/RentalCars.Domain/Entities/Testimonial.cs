@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace RentalCars.Domain.Entities
 {
-    public class Testimonials :BaseEntity
+    public class Testimonial :BaseEntity
     {
         public string? Name { get; set; }
         public string? Description { get; set; }
 
         public string? Image { get; set; }
 
-
+        
     }
 }

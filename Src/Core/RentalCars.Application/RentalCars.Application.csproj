@@ -7,21 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\About\Commands\Create\" />
-    <Folder Include="Features\About\Commands\Delete\" />
-    <Folder Include="Features\About\Commands\Update\" />
-    <Folder Include="Features\About\Profiles\" />
-    <Folder Include="Features\About\Queries\GetById\" />
-    <Folder Include="Features\About\Queries\GetList\" />
-    <Folder Include="Services\Repositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="FluentValidation" Version="11.7.1" />
     <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\RentalCars.Infrastructure\RentalCars.Infrastructure.csproj" />
+    <ProjectReference Include="..\RentalCars.Domain\RentalCars.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Cars\" />
   </ItemGroup>
 
 </Project>

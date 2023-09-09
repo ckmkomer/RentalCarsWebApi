@@ -17,7 +17,8 @@ namespace RentalCars.Domain.Entities
 
         public string? Select { get; set; }
 
-
+        public int CarID { get; set; }
+        public Car Car { get; set; }
 
     }
 }
