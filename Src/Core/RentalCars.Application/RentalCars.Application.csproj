@@ -21,12 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\CarDetails\Commands\Create\" />
-    <Folder Include="Features\CarDetails\Commands\Delete\" />
-    <Folder Include="Features\CarDetails\Commands\Update\" />
-    <Folder Include="Features\CarDetails\Profiles\" />
-    <Folder Include="Features\CarDetails\Queries\GetById\" />
-    <Folder Include="Features\CarDetails\Queries\GetList\" />
     <Folder Include="Features\Contacts\Commands\Create\" />
     <Folder Include="Features\Contacts\Commands\Delete\" />
     <Folder Include="Features\Contacts\Commands\Update\" />
