@@ -16,7 +16,7 @@ namespace RentalCars.Persistence.Contexts
 
         public DbSet<About> Abouts { get; set; }
         public DbSet<Car> Cars { get; set; }
-        public DbSet<CarDetails> CarDetails  { get; set; }
+        public DbSet<CarDetail> CarDetails  { get; set; }
 
         public DbSet<Brand> Brands { get; set; }
 

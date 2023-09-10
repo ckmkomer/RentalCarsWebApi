@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RentalCars.Application.Services.Repositories
 {
-    public interface ICarDetailsRepository: IAsyncRepository<CarDetails>
+    public interface ICarDetailsRepository: IAsyncRepository<CarDetail>
     {
 
     }

@@ -21,7 +21,60 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Cars\" />
+    <Folder Include="Features\CarDetails\Commands\Create\" />
+    <Folder Include="Features\CarDetails\Commands\Delete\" />
+    <Folder Include="Features\CarDetails\Commands\Update\" />
+    <Folder Include="Features\CarDetails\Profiles\" />
+    <Folder Include="Features\CarDetails\Queries\GetById\" />
+    <Folder Include="Features\CarDetails\Queries\GetList\" />
+    <Folder Include="Features\Contacts\Commands\Create\" />
+    <Folder Include="Features\Contacts\Commands\Delete\" />
+    <Folder Include="Features\Contacts\Commands\Update\" />
+    <Folder Include="Features\Contacts\Profiles\" />
+    <Folder Include="Features\Contacts\Queries\GetById\" />
+    <Folder Include="Features\Contacts\Queries\GetList\" />
+    <Folder Include="Features\ContactUss\Commands\Create\" />
+    <Folder Include="Features\ContactUss\Commands\Delete\" />
+    <Folder Include="Features\ContactUss\Commands\Update\" />
+    <Folder Include="Features\ContactUss\Profiles\" />
+    <Folder Include="Features\ContactUss\Queries\GetList\" />
+    <Folder Include="Features\ContactUss\Queries\GetById\" />
+    <Folder Include="Features\FeatureDiss\Commands\Delete\" />
+    <Folder Include="Features\FeatureDiss\Commands\Create\" />
+    <Folder Include="Features\FeatureDiss\Commands\Update\" />
+    <Folder Include="Features\FeatureDiss\Profiles\" />
+    <Folder Include="Features\FeatureDiss\Queries\GetList\" />
+    <Folder Include="Features\FeatureDiss\Queries\GetById\" />
+    <Folder Include="Features\Features\Commands\Create\" />
+    <Folder Include="Features\Features\Commands\Delete\" />
+    <Folder Include="Features\Features\Commands\Update\" />
+    <Folder Include="Features\Features\Profiles\" />
+    <Folder Include="Features\Features\Queries\GetList\" />
+    <Folder Include="Features\Features\Queries\GetById\" />
+    <Folder Include="Features\Reservations\Commands\Delete\" />
+    <Folder Include="Features\Reservations\Commands\Create\" />
+    <Folder Include="Features\Reservations\Commands\Update\" />
+    <Folder Include="Features\Reservations\Profiles\" />
+    <Folder Include="Features\Reservations\Queries\GetList\" />
+    <Folder Include="Features\Reservations\Queries\GetById\" />
+    <Folder Include="Features\Services\Commands\Delete\" />
+    <Folder Include="Features\Services\Commands\Create\" />
+    <Folder Include="Features\Services\Commands\Update\" />
+    <Folder Include="Features\Services\Profiles\" />
+    <Folder Include="Features\Services\Queries\GetList\" />
+    <Folder Include="Features\Services\Queries\GetById\" />
+    <Folder Include="Features\SocailMedias\Commands\Create\" />
+    <Folder Include="Features\SocailMedias\Commands\Delete\" />
+    <Folder Include="Features\SocailMedias\Commands\Update\" />
+    <Folder Include="Features\SocailMedias\Profiles\" />
+    <Folder Include="Features\SocailMedias\Queries\GetList\" />
+    <Folder Include="Features\SocailMedias\Queries\GetById\" />
+    <Folder Include="Features\Testimonials\Commands\Create\" />
+    <Folder Include="Features\Testimonials\Commands\Delete\" />
+    <Folder Include="Features\Testimonials\Commands\Update\" />
+    <Folder Include="Features\Testimonials\Profiles\" />
+    <Folder Include="Features\Testimonials\Queries\GetList\" />
+    <Folder Include="Features\Testimonials\Queries\GetById\" />
   </ItemGroup>
 
 </Project>

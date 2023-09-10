@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RentalCars.Domain.Entities
 {
-    public class CarDetails :BaseEntity
+    public class CarDetail :BaseEntity
     {
         public string Title{ get; set; }
         public string Description { get; set; }

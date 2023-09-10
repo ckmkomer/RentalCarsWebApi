@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace RentalCars.Persistence.EntityConfigurations
 {
-    internal class CarDetailsConfiguration : IEntityTypeConfiguration<CarDetails>
+    internal class CarDetailsConfiguration : IEntityTypeConfiguration<CarDetail>
     {
-        public void Configure(EntityTypeBuilder<CarDetails> builder)
+        public void Configure(EntityTypeBuilder<CarDetail> builder)
         {
             builder.ToTable("CarDetails").HasKey(b => b.Id);
 

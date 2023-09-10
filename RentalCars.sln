@@ -7,19 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{95681E6A-326
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{74036C48-9F59-4ED0-91E0-D82207D60ED2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentalCars.Application", "Src\Core\RentalCars.Application\RentalCars.Application.csproj", "{F7D7C08E-B8F9-43B6-88F6-F7BF54B04852}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentalCars.Application", "Src\Core\RentalCars.Application\RentalCars.Application.csproj", "{F7D7C08E-B8F9-43B6-88F6-F7BF54B04852}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentalCars.Domain", "Src\Core\RentalCars.Domain\RentalCars.Domain.csproj", "{6D17D95D-4B49-4762-87A0-A0AA2CCFDAA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentalCars.Domain", "Src\Core\RentalCars.Domain\RentalCars.Domain.csproj", "{6D17D95D-4B49-4762-87A0-A0AA2CCFDAA9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6F9B288D-076C-425F-BB4C-693A75C91889}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentalCars.Infrastructure", "Src\Infrastructure\RentalCars.Infrastructure\RentalCars.Infrastructure.csproj", "{59FBFA0C-D81C-40CC-9F78-69FE79FC3584}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentalCars.Infrastructure", "Src\Infrastructure\RentalCars.Infrastructure\RentalCars.Infrastructure.csproj", "{59FBFA0C-D81C-40CC-9F78-69FE79FC3584}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentalCars.Persistence", "Src\Infrastructure\RentalCars.Persistence\RentalCars.Persistence.csproj", "{B9B19925-E4F6-4C64-B48A-6DC170F23310}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentalCars.Persistence", "Src\Infrastructure\RentalCars.Persistence\RentalCars.Persistence.csproj", "{B9B19925-E4F6-4C64-B48A-6DC170F23310}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{8DCC80C5-33A3-4D31-9D43-6976A845544E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentalCars.WebApi", "Src\Presentation\RentalCars.WebApi\RentalCars.WebApi.csproj", "{A780CBA4-13F0-4F0E-9CDF-32FFEF106597}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentalCars.WebApi", "Src\Presentation\RentalCars.WebApi\RentalCars.WebApi.csproj", "{A780CBA4-13F0-4F0E-9CDF-32FFEF106597}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

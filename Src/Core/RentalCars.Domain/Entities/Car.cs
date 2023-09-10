@@ -19,7 +19,7 @@ namespace RentalCars.Domain.Entities
 
         public ICollection<Brand> Brands { get; set; } 
         public ICollection<Reservation> Reservations { get; set; } 
-        public ICollection<CarDetails> CarDetails { get; set; } 
+        public ICollection<CarDetail> CarDetails { get; set; } 
         
 
     }

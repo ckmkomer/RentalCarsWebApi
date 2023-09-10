@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RentalCars.Persistence.Repositories
 {
-    public class CarDetailsRepository : EfRepositoryBase<CarDetails, BaseDbContext>, ICarDetailsRepository
+    public class CarDetailsRepository : EfRepositoryBase<CarDetail, BaseDbContext>, ICarDetailsRepository
     {
     
 public CarDetailsRepository(BaseDbContext context) : base(context)
