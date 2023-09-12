@@ -8,5 +8,6 @@ namespace RentalCars.Application.Features.CarDetails.Commands.Create
 {
     public class CreateCarDetailResponse
     {
+        public int Id { get; set; }
     }
 }

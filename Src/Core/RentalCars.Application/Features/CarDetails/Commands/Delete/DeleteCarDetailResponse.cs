@@ -9,5 +9,6 @@ namespace RentalCars.Application.Features.CarDetails.Commands.Delete
     
     public class DeleteCarDetailResponse
     {
+        public  int Id { get; set; }
     }
 }
