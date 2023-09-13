@@ -23,7 +23,7 @@ namespace RentalCars.Application.Features.Abouts.Profiles
             CreateMap<About, DeleteAboutCommand>().ReverseMap();
             CreateMap<About,DeleteAboutResponse>().ReverseMap();
 
-            CreateMap<About,GetListAboutListItemDTO>().ReverseMap();
+            CreateMap<About, GetListAboutListItemDTO>().ReverseMap();
             CreateMap<About,GetByIdAboutResponse>().ReverseMap();
             CreateMap<Paginate<About>,GetListResponse<GetListAboutListItemDTO>>().ReverseMap();
         }

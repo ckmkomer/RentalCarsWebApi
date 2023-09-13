@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RentalCars.Persistence.Repositories
 {
-    public class FeatureRepository : EfRepositoryBase<ContactUs, BaseDbContext>, IContactUsRepository
+    public class FeatureRepository : EfRepositoryBase<Feature, BaseDbContext>, IFeatureRepository
     {
         public FeatureRepository(BaseDbContext context) : base(context)
         {

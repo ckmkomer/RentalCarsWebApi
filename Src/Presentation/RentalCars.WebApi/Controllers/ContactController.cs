@@ -4,7 +4,9 @@ using RentalCars.Application.Features.Abouts.Commands.Update;
 using RentalCars.Application.Features.Abouts.Queries.GetList;
 using RentalCars.Application.Features.Contacts.Commands.Create;
 using RentalCars.Application.Features.Contacts.Commands.Delete;
+using RentalCars.Application.Features.Contacts.Commands.Update;
 using RentalCars.Application.Features.Contacts.Queries.GetById;
+using RentalCars.Application.Features.Contacts.Queries.GetList;
 using RentalCars.Application.Requests;
 using RentalCars.Application.Responses;
 using RentalCars.Application.Services.Repositories;
@@ -16,12 +18,12 @@ namespace RentalCars.WebApi.Controllers
     public class ContactController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly IContactRepository _contactRepository;
+
 
         public ContactController(IMediator mediator, IContactRepository contactRepository)
         {
             _mediator = mediator;
-            _contactRepository = contactRepository;
+           
         }
 
         [HttpPost]
@@ -35,9 +37,9 @@ namespace RentalCars.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetList([FromQuery] PageRequest pageRequest)
         {
-            GetListAboutQuery getListAboutQuery = new() { PageRequest = pageRequest };
+            GetListContactQuery getListContactQuery = new() { PageRequest = pageRequest };
 
-            GetListResponse<GetListAboutListItemDTO> response = await _mediator.Send(getListAboutQuery);
+            GetListResponse<GetListContactListItemDTO> response = await _mediator.Send(getListContactQuery);
 
             return Ok(response);
         }
@@ -53,9 +55,9 @@ namespace RentalCars.WebApi.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update([FromBody] UpdateAboutCommand updateAboutCommand)
+        public async Task<IActionResult> Update([FromBody] UpdateContactCommand updateAboutCommand)
         {
-            UpdateAboutResponse response = await _mediator.Send(updateAboutCommand);
+            UpdateContactResponse response = await _mediator.Send(updateAboutCommand);
 
             return Ok(response);
         }

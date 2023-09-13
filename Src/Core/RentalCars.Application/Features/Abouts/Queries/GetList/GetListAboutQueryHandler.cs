@@ -36,5 +36,7 @@ namespace RentalCars.Application.Features.Abouts.Queries.GetList
             GetListResponse<GetListAboutListItemDTO> response = _mapper.Map<GetListResponse<GetListAboutListItemDTO>>(abouts);
             return response;
         }
+
+       
     }
 }

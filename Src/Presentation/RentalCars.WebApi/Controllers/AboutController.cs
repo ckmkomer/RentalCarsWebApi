@@ -32,7 +32,7 @@ namespace RentalCars.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetList([FromQuery] PageRequest pageRequest)
         {
-          GetListAboutQuery  getListAboutQuery  = new() { PageRequest = pageRequest };
+            GetListAboutQuery getListAboutQuery = new() { PageRequest = pageRequest };
 
             GetListResponse<GetListAboutListItemDTO> response = await _mediator.Send(getListAboutQuery);
 
