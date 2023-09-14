@@ -1,0 +1,17 @@
+﻿using MediatR;
+using RentalCars.Application.Features.Services.Queries.GetList;
+using RentalCars.Application.Requests;
+using RentalCars.Application.Responses;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RentalCars.Application.Features.Testimonials.Queries.GetList
+{
+    public class GetListTestimonialQuery : IRequest<GetListResponse<GetListTestimonialListItemDTO>>
+    {
+        public PageRequest PageRequest { get; set; }
+    }
+}

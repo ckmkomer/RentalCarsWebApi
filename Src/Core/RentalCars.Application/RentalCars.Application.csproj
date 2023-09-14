@@ -27,18 +27,6 @@
     <Folder Include="Features\FeatureDiss\Profiles\" />
     <Folder Include="Features\FeatureDiss\Queries\GetList\" />
     <Folder Include="Features\FeatureDiss\Queries\GetById\" />
-    <Folder Include="Features\SocailMedias\Commands\Create\" />
-    <Folder Include="Features\SocailMedias\Commands\Delete\" />
-    <Folder Include="Features\SocailMedias\Commands\Update\" />
-    <Folder Include="Features\SocailMedias\Profiles\" />
-    <Folder Include="Features\SocailMedias\Queries\GetList\" />
-    <Folder Include="Features\SocailMedias\Queries\GetById\" />
-    <Folder Include="Features\Testimonials\Commands\Create\" />
-    <Folder Include="Features\Testimonials\Commands\Delete\" />
-    <Folder Include="Features\Testimonials\Commands\Update\" />
-    <Folder Include="Features\Testimonials\Profiles\" />
-    <Folder Include="Features\Testimonials\Queries\GetList\" />
-    <Folder Include="Features\Testimonials\Queries\GetById\" />
   </ItemGroup>
 
 </Project>

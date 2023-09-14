@@ -1,16 +1,9 @@
 ﻿using AutoMapper;
-using AutoMapper.Features;
 using MediatR;
-using RentalCars.Application.Features.Features.Queries.GetList;
 using RentalCars.Application.Paging;
 using RentalCars.Application.Responses;
 using RentalCars.Application.Services.Repositories;
 using RentalCars.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RentalCars.Application.Features.Services.Queries.GetList
 {

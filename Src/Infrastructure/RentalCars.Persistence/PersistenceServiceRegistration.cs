@@ -22,6 +22,8 @@ namespace RentalCars.Persistence
             services.AddScoped<IFeatureRepository, FeatureRepository>();
             services.AddScoped<IServiceRepository, ServiceRepository>();
             services.AddScoped<IReservationRepository, ReservationRepository>();
+            services.AddScoped<ISocialMediaRepository, SocialMediaRepository>();
+            services.AddScoped<ITestimonialRepository, TestimonialRepository>();
 
 
             return services;
