@@ -1,0 +1,196 @@
+2023-09-16 14:14:00.116 +03:00 [INF] [Request] HTTP POST /api/Brand
+2023-09-16 14:14:02.458 +03:00 [INF] [Request] HTTP POST /api/Brand Responded 200 in 2343.0859 ms
+2023-09-16 14:14:24.623 +03:00 [INF] [Request] HTTP DELETE /api/Brand/34
+2023-09-16 14:14:25.551 +03:00 [ERR] [Error] HTTP DELETE - 500 Error Message Value cannot be null. (Parameter 'entity') in 919.5152 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.CheckHasEntityHaveOneToOneRelation(TEntity entity) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 106
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.SetEntityAsDeletedAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 95
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.DeleteAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 48
+   at RentalCars.Application.Features.Brands.Commands.Delete.DeleteBrandHandler.Handle(DeleteBrandCommand request, CancellationToken cancellationToken) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Features\Brands\Commands\Delete\DeleteBrandHandler.cs:line 23
+   at RentalCars.WebApi.Controllers.BrandController.Delete(Int32 id) in D:\Project\RentalCars\Src\Presentation\RentalCars.WebApi\Controllers\BrandController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at RentalCars.Application.Middleware.CustomExceptionMiddleware.Invoke(HttpContext context) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Middleware\CustomExceptionMiddleware.cs:line 35
+2023-09-16 14:23:08.384 +03:00 [INF] [Request] HTTP DELETE /api/Contact/7
+2023-09-16 14:23:10.204 +03:00 [ERR] [Error] HTTP DELETE - 500 Error Message Value cannot be null. (Parameter 'entity') in 1811.9735 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.CheckHasEntityHaveOneToOneRelation(TEntity entity) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 106
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.SetEntityAsDeletedAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 95
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.DeleteAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 48
+   at RentalCars.Application.Features.Contacts.Commands.Delete.DeleteContactHandler.Handle(DeleteContactCommand request, CancellationToken cancellationToken) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Features\Contacts\Commands\Delete\DeleteContactHandler.cs:line 28
+   at RentalCars.WebApi.Controllers.ContactController.Delete(Int32 id) in D:\Project\RentalCars\Src\Presentation\RentalCars.WebApi\Controllers\ContactController.cs:line 68
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at RentalCars.Application.Middleware.CustomExceptionMiddleware.Invoke(HttpContext context) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Middleware\CustomExceptionMiddleware.cs:line 35
+2023-09-16 14:42:42.311 +03:00 [INF] [Request] HTTP DELETE /api/About/34
+2023-09-16 14:42:49.170 +03:00 [ERR] [Error] HTTP DELETE - 500 Error Message Value cannot be null. (Parameter 'entity') in 6828.7355 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.CheckHasEntityHaveOneToOneRelation(TEntity entity) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 106
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.SetEntityAsDeletedAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 95
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.DeleteAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 48
+   at RentalCars.Application.Features.Abouts.Commands.Delete.DeleteAboutHandler.Handle(DeleteAboutCommand request, CancellationToken cancellationToken) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Features\Abouts\Commands\Delete\DeleteAboutHandler.cs:line 23
+   at RentalCars.WebApi.Controllers.AboutController.Delete(Int32 id) in D:\Project\RentalCars\Src\Presentation\RentalCars.WebApi\Controllers\AboutController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at RentalCars.Application.Middleware.CustomExceptionMiddleware.Invoke(HttpContext context) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Middleware\CustomExceptionMiddleware.cs:line 35
+2023-09-16 14:42:54.815 +03:00 [INF] [Request] HTTP DELETE /api/About/5
+2023-09-16 14:42:55.526 +03:00 [INF] [Request] HTTP DELETE /api/About/5 Responded 200 in 710.5061 ms
+2023-09-16 14:48:06.804 +03:00 [INF] [Request] HTTP POST /api/Feature
+2023-09-16 14:48:11.505 +03:00 [INF] [Request] HTTP POST /api/Feature Responded 200 in 4701.7694 ms
+2023-09-16 14:48:27.926 +03:00 [INF] [Request] HTTP DELETE /api/Feature/3
+2023-09-16 14:48:30.553 +03:00 [ERR] [Error] HTTP DELETE - 500 Error Message Value cannot be null. (Parameter 'entity') in 2607.3895 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.CheckHasEntityHaveOneToOneRelation(TEntity entity) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 106
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.SetEntityAsDeletedAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 95
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.DeleteAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 48
+   at RentalCars.Application.Features.Features.Commands.Delete.DeleteFeatureHandler.Handle(DeleteFeatureCommand request, CancellationToken cancellationToken) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Features\Features\Commands\Delete\DeleteFeatureHandler.cs:line 28
+   at RentalCars.WebApi.Controllers.FeatureController.Delete(Int32 id) in D:\Project\RentalCars\Src\Presentation\RentalCars.WebApi\Controllers\FeatureController.cs:line 69
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at RentalCars.Application.Middleware.CustomExceptionMiddleware.Invoke(HttpContext context) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Middleware\CustomExceptionMiddleware.cs:line 35
+2023-09-16 14:53:57.344 +03:00 [INF] [Request] HTTP POST /api/About
+2023-09-16 14:54:02.868 +03:00 [INF] [Request] HTTP POST /api/About Responded 200 in 5523.795 ms
+2023-09-16 14:54:12.212 +03:00 [INF] [Request] HTTP DELETE /api/About/8
+2023-09-16 14:54:13.290 +03:00 [INF] [Request] HTTP DELETE /api/About/8 Responded 200 in 1078.3686 ms
+2023-09-16 14:54:18.833 +03:00 [INF] [Request] HTTP DELETE /api/About/8
+2023-09-16 14:54:20.362 +03:00 [ERR] [Error] HTTP DELETE - 500 Error Message İşlem sırasında bir hata oluştu. Lütfen daha sonra tekrar deneyin. in 1508.4672 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.CheckHasEntityHaveOneToOneRelation(TEntity entity) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 106
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.SetEntityAsDeletedAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 95
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.DeleteAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 48
+   at RentalCars.Application.Features.Abouts.Commands.Delete.DeleteAboutHandler.Handle(DeleteAboutCommand request, CancellationToken cancellationToken) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Features\Abouts\Commands\Delete\DeleteAboutHandler.cs:line 23
+   at RentalCars.WebApi.Controllers.AboutController.Delete(Int32 id) in D:\Project\RentalCars\Src\Presentation\RentalCars.WebApi\Controllers\AboutController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at RentalCars.Application.Middleware.CustomExceptionMiddleware.Invoke(HttpContext context) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Middleware\CustomExceptionMiddleware.cs:line 35
+2023-09-16 14:56:42.468 +03:00 [INF] [Request] HTTP DELETE /api/About/2
+2023-09-16 14:56:48.794 +03:00 [ERR] [Error] HTTP DELETE - 500 Error Message İşlem sırasında bir hata oluştu. Lütfen daha sonra tekrar deneyin. in 6306.2965 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.CheckHasEntityHaveOneToOneRelation(TEntity entity) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 106
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.SetEntityAsDeletedAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 95
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.DeleteAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 48
+   at RentalCars.Application.Features.Abouts.Commands.Delete.DeleteAboutHandler.Handle(DeleteAboutCommand request, CancellationToken cancellationToken) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Features\Abouts\Commands\Delete\DeleteAboutHandler.cs:line 23
+   at RentalCars.WebApi.Controllers.AboutController.Delete(Int32 id) in D:\Project\RentalCars\Src\Presentation\RentalCars.WebApi\Controllers\AboutController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at RentalCars.Application.Middleware.CustomExceptionMiddleware.Invoke(HttpContext context) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Middleware\CustomExceptionMiddleware.cs:line 35
+2023-09-16 15:01:39.291 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-16 15:01:41.909 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 2618.2098 ms
+2023-09-16 15:02:03.314 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-16 15:02:03.499 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 184.506 ms
+2023-09-16 15:02:36.704 +03:00 [INF] [Request] HTTP DELETE /api/About/11
+2023-09-16 15:02:38.292 +03:00 [ERR] [Error] HTTP DELETE - 500 Error Message İşlem sırasında bir hata oluştu. Lütfen daha sonra tekrar deneyin. in 1566.3538 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.CheckHasEntityHaveOneToOneRelation(TEntity entity) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 106
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.SetEntityAsDeletedAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 95
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.DeleteAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 48
+   at RentalCars.Application.Features.Abouts.Commands.Delete.DeleteAboutHandler.Handle(DeleteAboutCommand request, CancellationToken cancellationToken) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Features\Abouts\Commands\Delete\DeleteAboutHandler.cs:line 23
+   at RentalCars.WebApi.Controllers.AboutController.Delete(Int32 id) in D:\Project\RentalCars\Src\Presentation\RentalCars.WebApi\Controllers\AboutController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at RentalCars.Application.Middleware.CustomExceptionMiddleware.Invoke(HttpContext context) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Middleware\CustomExceptionMiddleware.cs:line 35
+2023-09-16 15:03:42.755 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-16 15:03:45.031 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 2276.3012 ms
+2023-09-16 15:03:50.247 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-16 15:03:50.440 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 193.3512 ms
+2023-09-16 15:04:17.478 +03:00 [INF] [Request] HTTP DELETE /api/About/12
+2023-09-16 15:04:19.261 +03:00 [ERR] [Error] HTTP DELETE - 500 Error Message İşlem sırasında bir hata oluştu. Lütfen daha sonra tekrar deneyin. in 1757.2976 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.CheckHasEntityHaveOneToOneRelation(TEntity entity) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 106
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.SetEntityAsDeletedAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 95
+   at RentalCars.Application.Services.Repositories.EfRepositoryBase`2.DeleteAsync(TEntity entity, Boolean permanent) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Services\Repositories\EfRepositoryBase.cs:line 48
+   at RentalCars.Application.Features.Abouts.Commands.Delete.DeleteAboutHandler.Handle(DeleteAboutCommand request, CancellationToken cancellationToken) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Features\Abouts\Commands\Delete\DeleteAboutHandler.cs:line 23
+   at RentalCars.WebApi.Controllers.AboutController.Delete(Int32 id) in D:\Project\RentalCars\Src\Presentation\RentalCars.WebApi\Controllers\AboutController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at RentalCars.Application.Middleware.CustomExceptionMiddleware.Invoke(HttpContext context) in D:\Project\RentalCars\Src\Core\RentalCars.Application\Middleware\CustomExceptionMiddleware.cs:line 35
+2023-09-16 19:55:02.483 +03:00 [INF] [Request] HTTP POST /api/About
+2023-09-16 19:55:11.203 +03:00 [INF] [Request] HTTP POST /api/About Responded 200 in 8720.1938 ms

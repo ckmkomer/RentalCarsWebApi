@@ -2,6 +2,7 @@
 using MediatR;
 using RentalCars.Application.Services.Repositories;
 using RentalCars.Domain.Entities;
+using Serilog;
 
 namespace RentalCars.Application.Features.Abouts.Commands.Create
 {
@@ -26,7 +27,10 @@ namespace RentalCars.Application.Features.Abouts.Commands.Create
 
             var result = await _aboutRepository.AddAsync(about);
 
+
             CreateAboutResponse response = _mapper.Map<CreateAboutResponse>(result);
+
+            Log.Information("Yeni bir About eklendi: ID {AboutId}", response.Id);
             return response;
 
         }

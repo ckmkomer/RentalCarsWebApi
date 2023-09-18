@@ -1,12 +1,5 @@
-﻿using AutoMapper;
-using MediatR;
-using Microsoft.AspNetCore.Http;
+﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using RentalCars.Application.Features.Abouts.Commands.Create;
-using RentalCars.Application.Features.Abouts.Commands.Delete;
-using RentalCars.Application.Features.Abouts.Commands.Update;
-using RentalCars.Application.Features.Abouts.Queries.GetById;
-using RentalCars.Application.Features.Abouts.Queries.GetList;
 using RentalCars.Application.Features.SocailMedias.Commands.Create;
 using RentalCars.Application.Features.SocailMedias.Commands.Delete;
 using RentalCars.Application.Features.SocailMedias.Commands.Update;
@@ -14,7 +7,6 @@ using RentalCars.Application.Features.SocailMedias.Queries.GetById;
 using RentalCars.Application.Features.SocailMedias.Queries.GetList;
 using RentalCars.Application.Requests;
 using RentalCars.Application.Responses;
-using RentalCars.Application.Services.Repositories;
 
 namespace RentalCars.WebApi.Controllers
 {
@@ -32,6 +24,7 @@ namespace RentalCars.WebApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] CreateSocialMediaCommand createSocialMediaCommand)
         {
+
             CreateSocialMediaResponse response = await _mediator.Send(createSocialMediaCommand);
 
             return Ok(response);

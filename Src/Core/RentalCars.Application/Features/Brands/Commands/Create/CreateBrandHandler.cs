@@ -1,13 +1,9 @@
 ﻿using AutoMapper;
 using MediatR;
-using RentalCars.Application.Features.Abouts.Commands.Create;
+using Microsoft.Extensions.Caching.Memory;
 using RentalCars.Application.Services.Repositories;
 using RentalCars.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Serilog;
 
 namespace RentalCars.Application.Features.Brands.Commands.Create
 {
@@ -15,21 +11,43 @@ namespace RentalCars.Application.Features.Brands.Commands.Create
     {
         private readonly IMapper _mapper;
         private readonly IBrandRepository _brandRepository;
+        private readonly IMemoryCache _memoryCache;
 
-        public CreateBrandHandler(IMapper mapper, IBrandRepository brandRepository)
+        public CreateBrandHandler(IMapper mapper, IBrandRepository brandRepository, IMemoryCache memoryCache)
         {
             _mapper = mapper;
             _brandRepository = brandRepository;
+            _memoryCache = memoryCache;
         }
 
         public async Task<CreateBrandResponse> Handle(CreateBrandCommand request, CancellationToken cancellationToken)
         {
+           
             Brand brand = _mapper.Map<Brand>(request);
+
+            
             var result = await _brandRepository.AddAsync(brand);
 
-            CreateBrandResponse response =_mapper.Map<CreateBrandResponse>(result);
+            
+            if (result != null)
+            {
+                var cacheKey = "BrandList"; // Önbellekteki ilgili verinin anahtarı
+                var cacheEntryOptions = new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromSeconds(60))
+                    .SetAbsoluteExpiration(TimeSpan.FromSeconds(3600))
+                    .SetPriority(CacheItemPriority.Normal);
+
+                // Önbelleğe ekleme
+                _memoryCache.Set(cacheKey, result, cacheEntryOptions);
+
+                // Marka eklemesi başarılı olduğunda loglama
+                Log.Information("Yeni marka eklenmiştir: {@Brand}", brand);
+            }
+
+            CreateBrandResponse response = _mapper.Map<CreateBrandResponse>(result);
 
             return response;
         }
+
     }
 }

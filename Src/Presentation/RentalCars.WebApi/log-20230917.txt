@@ -1,0 +1,56 @@
+2023-09-17 14:26:57.812 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:27:02.275 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 4463.5696 ms
+2023-09-17 14:31:10.336 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:31:12.440 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 2104.1868 ms
+2023-09-17 14:31:32.272 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:31:32.422 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 150.2455 ms
+2023-09-17 14:33:33.207 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:33:33.245 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 38.075 ms
+2023-09-17 14:33:42.174 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:33:42.180 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 6.2589 ms
+2023-09-17 14:33:43.374 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:33:43.381 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 6.4182 ms
+2023-09-17 14:33:44.354 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:33:44.362 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 8.0992 ms
+2023-09-17 14:33:45.202 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:33:45.212 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 10.2953 ms
+2023-09-17 14:33:46.125 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:33:46.133 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 8.1485 ms
+2023-09-17 14:33:46.987 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:33:46.998 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 10.9991 ms
+2023-09-17 14:33:48.745 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:33:48.753 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 7.9831 ms
+2023-09-17 14:33:49.722 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:33:49.729 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 7.0672 ms
+2023-09-17 14:33:50.436 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:33:50.443 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 6.7668 ms
+2023-09-17 14:34:10.663 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:34:10.672 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 8.9721 ms
+2023-09-17 14:34:13.656 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:34:13.663 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 6.9759 ms
+2023-09-17 14:34:36.350 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:34:36.365 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 14.5069 ms
+2023-09-17 14:34:37.795 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:34:37.804 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 8.8775 ms
+2023-09-17 14:34:39.045 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:34:39.049 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 4.8156 ms
+2023-09-17 14:34:40.232 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:34:40.239 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 6.5126 ms
+2023-09-17 14:34:41.529 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:34:41.542 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 12.8996 ms
+2023-09-17 14:35:01.791 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:35:01.801 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 10.4329 ms
+2023-09-17 14:35:09.260 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 14:35:09.270 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 9.9494 ms
+2023-09-17 15:25:47.863 +03:00 [INF] [Request] HTTP GET /api/Brand
+2023-09-17 15:25:52.051 +03:00 [INF] [Request] HTTP GET /api/Brand Responded 200 in 4188.2797 ms
+2023-09-17 15:27:45.707 +03:00 [INF] [Request] HTTP POST /api/Brand
+2023-09-17 15:27:45.931 +03:00 [INF] [Request] HTTP POST /api/Brand Responded 200 in 224.1912 ms
+2023-09-17 15:54:49.664 +03:00 [INF] [Request] HTTP POST /api/Brand
+2023-09-17 15:54:51.043 +03:00 [INF] [Request] HTTP POST /api/Brand Responded 200 in 1378.6806 ms
+2023-09-17 15:58:08.137 +03:00 [INF] [Request] HTTP POST /api/Brand
+2023-09-17 15:58:09.484 +03:00 [INF] [Request] HTTP POST /api/Brand Responded 200 in 1347.1386 ms
+2023-09-17 16:05:45.023 +03:00 [INF] [Request] HTTP POST /api/Brand
+2023-09-17 16:05:46.934 +03:00 [INF] [Request] HTTP POST /api/Brand Responded 200 in 1911.1653 ms
+2023-09-17 16:21:15.998 +03:00 [INF] [Request] HTTP GET /api/About
+2023-09-17 16:21:18.092 +03:00 [INF] [Request] HTTP GET /api/About Responded 200 in 2095.0883 ms
